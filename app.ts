@@ -21,5 +21,5 @@ function startEmulator(imgPath: string) {
 // Example usage
 const startButton = document.getElementById("start-btn");
 startButton?.addEventListener("click", () => {
-    startEmulator("disk-Windows 8 Build 8133.img");
+    startEmulator("Windows 8 Build 8133.img");
 });
