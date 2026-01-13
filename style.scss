@@ -1,0 +1,39 @@
+$background: #1b1b1b;
+$tile-color: #0078d7;
+$tile-hover: lighten($tile-color, 10%);
+
+body {
+    background: $background;
+    font-family: "Segoe UI", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#v86screen {
+    width: 1024px;
+    height: 768px;
+    margin: 20px auto;
+    border: 2px solid #555;
+}
+
+.tile {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: $tile-color;
+    margin: 10px;
+    cursor: pointer;
+    &:hover {
+        background: $tile-hover;
+    }
+    img {
+        width: 64px;
+        height: 64px;
+        margin-top: 20px;
+    }
+    span {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
